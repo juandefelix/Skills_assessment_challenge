@@ -1,0 +1,12 @@
+<div class="container">
+  <h1>User Skills and Levels</h1>
+  <h2>Hi, <%= @user.name%></h2>
+  <ul>
+      <% @user.skills.each do |s|%>
+      <li>
+        <p><%=s.name%></p><p>(<%=s.context%>)</p><br>
+      </li>
+      <%end%>
+  </ul>
+
+</div>

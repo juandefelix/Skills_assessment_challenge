@@ -56,3 +56,8 @@ post '/users' do
     erb :sign_up
   end
 end
+
+get '/my_skills' do
+  @user = User.find(session[:user_id])
+  erb :my_skills
+end
